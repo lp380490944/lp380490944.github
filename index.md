@@ -2,10 +2,9 @@
 layout: page
 title: Hello World!
 tagline: Supporting tagline
+
 ---
 {% include JB/setup %}
-
-Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllbootstrap.com)
 
 ## Update Author Attributes
 
