@@ -71,21 +71,21 @@ headimg:
 #关注我
 follow:
   - class: fa-google-plus
-    url: http://www.zhanxin.info
+    url: http://lp380490944.github.io
   - class: fa-facebook
-    url: http://www.zhanxin.info
+    url: https://www.facebook.com/bluce.li1
   - class: fa-github
-    url: http://github.com/pizn
+    url: http://github.com/lp380490944
   - class: fa-weibo
-    url: http://weibo.com/pizner
+    url: http://weibo.com/
   - class: fa-renren
-    url: http://www.zhanxin.info
+    url: http://lp380490944.github.io
   - class: fa-pinterest
-    url: http://www.zhanxin.info
+    url: http://lp380490944.github.io
   - class: fa-twitter
-    url: http://www.zhanxin.info
+    url: https://twitter.com/lp380490944
   - class: fa-rss
-    url: http://www.zhanxin.info
+    url: http://lp380490944.github.io
 
 #作者信息
 author:
