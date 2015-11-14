@@ -5,9 +5,6 @@ tagline: Supporting tagline
 
 ---
 {% include JB/setup %}
-
-## Update Author Attributes
-
     
 ## Sample Posts
 
@@ -19,6 +16,5 @@ tagline: Supporting tagline
   {% endfor %}
 </ul>
 
-## To-Do
 
 
