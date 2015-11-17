@@ -5,5 +5,5 @@ description: ""
 category: 
 tags: []
 ---
-{% include JB/setup %}
+
 #hello,world!
