@@ -1,16 +1,6 @@
-<!DOCTYPE html>
-<html>
-
-  {% include head.html %}
-
-  <body>
-
-    {% include header.html %}
-
-    <div class="page-content">
-        {{ content }}
-    </div>
-
-  </body>
-
-</html>
+---
+theme :
+  name : hooligan
+---
+{% include JB/setup %}
+{% include themes/hooligan/default.html %}
