@@ -2,7 +2,7 @@
 layout: blank
 ---
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
+<feed xmlns="http://lp380490944.github.io">
  
    <title>{{ site.title }}</title>
    <link href="{{ site.url }}{{ site.feed }}" rel="self" type="application/atom+xml"/>
