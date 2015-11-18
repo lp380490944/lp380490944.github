@@ -1,61 +1,0 @@
----
-layout:post
-title:"iOS面试题二"
-description:"经典面试题"
-category:iOS面试题
-tags:[]
----
-{% include JB/setup %}
-
-#iOS面试题二
-
-###1、写出方法获取IOS内存使用情况？
-答案：
-
-		// 获取当前设备可用内存及所占内存的头文件	 #import <sys/sysctl.h>    #import <mach/mach.h>	// 获取当前设备可用内存(单位：MB）	- (double)availableMemory	{	  vm_statistics_data_t vmStats;	  mach_msg_type_number_t infoCount = HOST_VM_INFO_COUNT; 	 kern_return_t kernReturn = host_statistics(mach_host_self(),                                              HOST_VM_INFO,                                              (host_info_t)&vmStats,                                              &infoCount);   	 if (kernReturn != KERN_SUCCESS) {   	 return NSNotFound;	  }      return ((vm_page_size *vmStats.free_count) / 1024.0) / 1024.0;    }	// 获取当前任务所占用的内存（单位：MB）    - (double)usedMemory	{    task_basic_info_data_t taskInfo;    mach_msg_type_number_t infoCount = TASK_BASIC_INFO_COUNT;    kern_return_t kernReturn = task_info(mach_task_self(),                                        TASK_BASIC_INFO,                                        (task_info_t)&taskInfo,                                        &infoCount);    if (kernReturn != KERN_SUCCESS       ) {     return NSNotFound;     }      return taskInfo.resident_size / 1024.0 / 1024.0;}###2、深拷贝和浅拷贝的理解？
-答案：深拷贝拷贝的是内容，浅拷贝拷贝的是指针。深拷贝和浅拷贝最大的区别就是子类对象的地址是否改变，如果子类对象的地址改变那么就是深拷贝。
-
-###3、怎样实现一个singleton的类？
-答案：
-
-
-	static LOSingleton *shareInstance;
-	 +(LOSingleton*)sharedInstance{
-	 @synchronized(self){
-	 //这个东西其实就是 一个加锁。如果self 其他线程访问，则会阻塞。这样做一般是用来对单例 进行一个死锁的保护
-	 if(shareInstance == nil){
-	 
-	 shareInstance = [[super allocWithZone:NULL]init];
-	    }
-	  
-	   }
-	 
-	 return shareInstance;
-	 }
-	 
-//第二种方式：
-
-	+（LOSingleton*）sharedInstance
-	{
-	static LoSingleton * sharedInstance = nil;
-	static dispatch_once_t onceToken;  //锁
-	dispatch_once(&onceToken,^{
-	//最多调用一次
-	sharedInstance = [[self alloc] init];
-	
-	});
-	
-	return sharedInstance;
-	}
-	
-	
-###4、什么是安全释放？
-答案：在对象release之后把指针置为nil
-
-###5、Runloop是什么？
-答案：一个RunLoop就是一个时间处理的循环，用来不停的调度工作以及处理输入时间。使用runloop的目的是让你的线程在有工作的时候忙于工作，而在没有工作的时候处于休眠状态。runloop的设计是为了减少cpu无谓的空转
-###6、什么是序列化和反序列化，可以用来你做什么？如何在OC中实现复杂对象的存储？
-答案： 如果你需要存储一个复杂的对象的话，经常需要以二进制的方法序列化这个对象，这个过程叫做Archiving。如果一个对象需要进行序列化，那么需要遵循NScoding协议，主要有两种方法：
-
-- (id)initWithCoder:(NSCoder*)coder;//从coder中读取数据，保存到相应的变量中，即反序列化数据
-- (void)encodeWithCoder:(NSCoder*)coder;//读取实例变量，并把这些数据写到 coder中去。即序列化数据。
