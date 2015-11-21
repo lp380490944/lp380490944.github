@@ -11,6 +11,8 @@ tags: []
 
 ###1、熟悉TCP/UDP/HTTP？
 ![原理图](http://wiki.mbalib.com/w/images/a/ac/TCP%EF%BC%8FIP%E5%8D%8F%E8%AE%AE%E6%97%8F%E4%B8%AD%E5%90%84%E5%8D%8F%E8%AE%AE%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB.jpg)
+
+
 详细原理请参照[这里](http://wiki.mbalib.com/wiki/TCP/IP)
 
 
