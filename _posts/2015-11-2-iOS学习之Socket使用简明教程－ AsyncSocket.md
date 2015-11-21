@@ -1,12 +1,16 @@
 ---
-
-layout:post
-title:"iOS学习之Socket使用简明教程－ AsyncSocket"
-category:lessons
-
+layout: post
+title: "iOS学习之Socket使用简明教程－ AsyncSocket"
+description: "iOS学习之Socket使用简明教程－ AsyncSocket"
+category : lessons
+tags: []
 ---
 
 {% include JB/setup %}
+
+
+
+#iOS学习之Socket使用简明教程－ AsyncSocket
 
 如果需要在项目中像QQ微信一样做到即时通讯，必须使用socket通讯，本人也是刚学习，分享一下，有什么不对的地方希望大家指正
 
