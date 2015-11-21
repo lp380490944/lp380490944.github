@@ -1,6 +1,10 @@
+
 ---
-layout:page
-title:"关于TCP/IP还有socket详解（原创）"
+layout: post
+title: "关于TCP/IP还有socket详解（原创"
+description: ""
+category: 
+tags: []
 ---
 {% include JB/setup %}
 #关于TCP/IP还有socket详解（原创）
