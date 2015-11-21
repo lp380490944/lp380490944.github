@@ -1,7 +1,6 @@
 ---
-layout:default
-title:关于TCP/IP还有socket详解（原创）
-
+layout:page
+title:"关于TCP/IP还有socket详解（原创）"
 ---
 
 #关于TCP/IP还有socket详解（原创）
