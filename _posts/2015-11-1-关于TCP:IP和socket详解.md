@@ -11,7 +11,9 @@ tags: []
 
 ###1、熟悉TCP/UDP/HTTP？
 ![原理图](http://wiki.mbalib.com/w/images/a/ac/TCP%EF%BC%8FIP%E5%8D%8F%E8%AE%AE%E6%97%8F%E4%B8%AD%E5%90%84%E5%8D%8F%E8%AE%AE%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB.jpg)
-详细原理请参照[这里](http://wiki.mbalib.com/wiki/TCP/IP);
+详细原理请参照[这里](http://wiki.mbalib.com/wiki/TCP/IP)
+
+
 TCP支持的应用协议主要有：Telnet、FTP、SMTP等；
 
 UDP支持的应用层协议主要有：NFS（网络文件系统）、SNMP（简单网络管理协议）、DNS（主域名称系统）、TFTP（通用文件传输协议）等
@@ -67,7 +69,9 @@ when in doubt, use tcp
 3.  同一节点相邻层间通过接口通信
 4. 每一层可以使用下层提供的服务
 5. 不同节点的同层间通过协议来实现对等层间的通信
-6. ![插图](http://i5.tietuku.com/d8a23048330df782.png)
+
+
+ ![插图](http://i5.tietuku.com/d8a23048330df782.png)
 
 ####网络通讯要素 
 • IP地址(唯一标示网络设备的0~255 2^32 = 4G): - 网络中设备的标示- 不易记忆,可以用主机名-本地回环地址:127.0.0.1 主机名:localhost 
