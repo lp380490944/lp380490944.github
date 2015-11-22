@@ -10,7 +10,7 @@ highlighter: pygments
 #
 title : 刘攀的技术博客
 tagline: Site Tagline
-author :
+author :刘攀
   name : liupan
   email : jp380490944@gmail.com
   github : lp380490944
@@ -64,7 +64,7 @@ JB :
   #   http://s3.amazonaws.com/yoursite/themes/watermelon
   #   /assets
   #
-  ASSET_PATH : false
+  ASSET_PATH : true
 
   # These paths are to the main pages Jekyll-Bootstrap ships with.
   # Some JB helpers refer to these paths; change them here if needed.
